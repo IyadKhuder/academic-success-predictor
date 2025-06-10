@@ -1,0 +1,346 @@
+C:\Users\ikhud\OneDrive\Documents\AI\TMO\venvTMO\Scripts\python.exe C:\Users\ikhud\OneDrive\Documents\AI\TMO\src\explore_data.py 
+Train shape: (76518, 38)
+Test shape: (51012, 37)
+
+--- Train Info ---
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 76518 entries, 0 to 76517
+Data columns (total 38 columns):
+ #   Column                                          Non-Null Count  Dtype  
+---  ------                                          --------------  -----  
+ 0   id                                              76518 non-null  int64  
+ 1   Marital status                                  76518 non-null  int64  
+ 2   Application mode                                76518 non-null  int64  
+ 3   Application order                               76518 non-null  int64  
+ 4   Course                                          76518 non-null  int64  
+ 5   Daytime/evening attendance                      76518 non-null  int64  
+ 6   Previous qualification                          76518 non-null  int64  
+ 7   Previous qualification (grade)                  76518 non-null  float64
+ 8   Nacionality                                     76518 non-null  int64  
+ 9   Mother's qualification                          76518 non-null  int64  
+ 10  Father's qualification                          76518 non-null  int64  
+ 11  Mother's occupation                             76518 non-null  int64  
+ 12  Father's occupation                             76518 non-null  int64  
+ 13  Admission grade                                 76518 non-null  float64
+ 14  Displaced                                       76518 non-null  int64  
+ 15  Educational special needs                       76518 non-null  int64  
+ 16  Debtor                                          76518 non-null  int64  
+ 17  Tuition fees up to date                         76518 non-null  int64  
+ 18  Gender                                          76518 non-null  int64  
+ 19  Scholarship holder                              76518 non-null  int64  
+ 20  Age at enrollment                               76518 non-null  int64  
+ 21  International                                   76518 non-null  int64  
+ 22  Curricular units 1st sem (credited)             76518 non-null  int64  
+ 23  Curricular units 1st sem (enrolled)             76518 non-null  int64  
+ 24  Curricular units 1st sem (evaluations)          76518 non-null  int64  
+ 25  Curricular units 1st sem (approved)             76518 non-null  int64  
+ 26  Curricular units 1st sem (grade)                76518 non-null  float64
+ 27  Curricular units 1st sem (without evaluations)  76518 non-null  int64  
+ 28  Curricular units 2nd sem (credited)             76518 non-null  int64  
+ 29  Curricular units 2nd sem (enrolled)             76518 non-null  int64  
+ 30  Curricular units 2nd sem (evaluations)          76518 non-null  int64  
+ 31  Curricular units 2nd sem (approved)             76518 non-null  int64  
+ 32  Curricular units 2nd sem (grade)                76518 non-null  float64
+ 33  Curricular units 2nd sem (without evaluations)  76518 non-null  int64  
+ 34  Unemployment rate                               76518 non-null  float64
+ 35  Inflation rate                                  76518 non-null  float64
+ 36  GDP                                             76518 non-null  float64
+ 37  Target                                          76518 non-null  object 
+dtypes: float64(7), int64(30), object(1)
+memory usage: 22.2+ MB
+None
+
+--- Test Info ---
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 51012 entries, 0 to 51011
+Data columns (total 37 columns):
+ #   Column                                          Non-Null Count  Dtype  
+---  ------                                          --------------  -----  
+ 0   id                                              51012 non-null  int64  
+ 1   Marital status                                  51012 non-null  int64  
+ 2   Application mode                                51012 non-null  int64  
+ 3   Application order                               51012 non-null  int64  
+ 4   Course                                          51012 non-null  int64  
+ 5   Daytime/evening attendance                      51012 non-null  int64  
+ 6   Previous qualification                          51012 non-null  int64  
+ 7   Previous qualification (grade)                  51012 non-null  float64
+ 8   Nacionality                                     51012 non-null  int64  
+ 9   Mother's qualification                          51012 non-null  int64  
+ 10  Father's qualification                          51012 non-null  int64  
+ 11  Mother's occupation                             51012 non-null  int64  
+ 12  Father's occupation                             51012 non-null  int64  
+ 13  Admission grade                                 51012 non-null  float64
+ 14  Displaced                                       51012 non-null  int64  
+ 15  Educational special needs                       51012 non-null  int64  
+ 16  Debtor                                          51012 non-null  int64  
+ 17  Tuition fees up to date                         51012 non-null  int64  
+ 18  Gender                                          51012 non-null  int64  
+ 19  Scholarship holder                              51012 non-null  int64  
+ 20  Age at enrollment                               51012 non-null  int64  
+ 21  International                                   51012 non-null  int64  
+ 22  Curricular units 1st sem (credited)             51012 non-null  int64  
+ 23  Curricular units 1st sem (enrolled)             51012 non-null  int64  
+ 24  Curricular units 1st sem (evaluations)          51012 non-null  int64  
+ 25  Curricular units 1st sem (approved)             51012 non-null  int64  
+ 26  Curricular units 1st sem (grade)                51012 non-null  float64
+ 27  Curricular units 1st sem (without evaluations)  51012 non-null  int64  
+ 28  Curricular units 2nd sem (credited)             51012 non-null  int64  
+ 29  Curricular units 2nd sem (enrolled)             51012 non-null  int64  
+ 30  Curricular units 2nd sem (evaluations)          51012 non-null  int64  
+ 31  Curricular units 2nd sem (approved)             51012 non-null  int64  
+ 32  Curricular units 2nd sem (grade)                51012 non-null  float64
+ 33  Curricular units 2nd sem (without evaluations)  51012 non-null  int64  
+ 34  Unemployment rate                               51012 non-null  float64
+ 35  Inflation rate                                  51012 non-null  float64
+ 36  GDP                                             51012 non-null  float64
+dtypes: float64(7), int64(30)
+memory usage: 14.4 MB
+None
+
+--- Missing Values (Train) ---
+id                                                0
+Marital status                                    0
+Application mode                                  0
+Application order                                 0
+Course                                            0
+Daytime/evening attendance                        0
+Previous qualification                            0
+Previous qualification (grade)                    0
+Nacionality                                       0
+Mother's qualification                            0
+Father's qualification                            0
+Mother's occupation                               0
+Father's occupation                               0
+Admission grade                                   0
+Displaced                                         0
+Educational special needs                         0
+Debtor                                            0
+Tuition fees up to date                           0
+Gender                                            0
+Scholarship holder                                0
+Age at enrollment                                 0
+International                                     0
+Curricular units 1st sem (credited)               0
+Curricular units 1st sem (enrolled)               0
+Curricular units 1st sem (evaluations)            0
+Curricular units 1st sem (approved)               0
+Curricular units 1st sem (grade)                  0
+Curricular units 1st sem (without evaluations)    0
+Curricular units 2nd sem (credited)               0
+Curricular units 2nd sem (enrolled)               0
+Curricular units 2nd sem (evaluations)            0
+Curricular units 2nd sem (approved)               0
+Curricular units 2nd sem (grade)                  0
+Curricular units 2nd sem (without evaluations)    0
+Unemployment rate                                 0
+Inflation rate                                    0
+GDP                                               0
+Target                                            0
+dtype: int64
+
+--- Missing Values (Test) ---
+id                                                0
+Marital status                                    0
+Application mode                                  0
+Application order                                 0
+Course                                            0
+Daytime/evening attendance                        0
+Previous qualification                            0
+Previous qualification (grade)                    0
+Nacionality                                       0
+Mother's qualification                            0
+Father's qualification                            0
+Mother's occupation                               0
+Father's occupation                               0
+Admission grade                                   0
+Displaced                                         0
+Educational special needs                         0
+Debtor                                            0
+Tuition fees up to date                           0
+Gender                                            0
+Scholarship holder                                0
+Age at enrollment                                 0
+International                                     0
+Curricular units 1st sem (credited)               0
+Curricular units 1st sem (enrolled)               0
+Curricular units 1st sem (evaluations)            0
+Curricular units 1st sem (approved)               0
+Curricular units 1st sem (grade)                  0
+Curricular units 1st sem (without evaluations)    0
+Curricular units 2nd sem (credited)               0
+Curricular units 2nd sem (enrolled)               0
+Curricular units 2nd sem (evaluations)            0
+Curricular units 2nd sem (approved)               0
+Curricular units 2nd sem (grade)                  0
+Curricular units 2nd sem (without evaluations)    0
+Unemployment rate                                 0
+Inflation rate                                    0
+GDP                                               0
+dtype: int64
+
+--- Unique Values in Train Columns ---
+id                                                76518
+Marital status                                        6
+Application mode                                     22
+Application order                                     8
+Course                                               19
+Daytime/evening attendance                            2
+Previous qualification                               21
+Previous qualification (grade)                      110
+Nacionality                                          18
+Mother's qualification                               35
+Father's qualification                               39
+Mother's occupation                                  40
+Father's occupation                                  56
+Admission grade                                     668
+Displaced                                             2
+Educational special needs                             2
+Debtor                                                2
+Tuition fees up to date                               2
+Gender                                                2
+Scholarship holder                                    2
+Age at enrollment                                    46
+International                                         2
+Curricular units 1st sem (credited)                  21
+Curricular units 1st sem (enrolled)                  24
+Curricular units 1st sem (evaluations)               36
+Curricular units 1st sem (approved)                  23
+Curricular units 1st sem (grade)                   1206
+Curricular units 1st sem (without evaluations)       12
+Curricular units 2nd sem (credited)                  20
+Curricular units 2nd sem (enrolled)                  22
+Curricular units 2nd sem (evaluations)               31
+Curricular units 2nd sem (approved)                  21
+Curricular units 2nd sem (grade)                   1234
+Curricular units 2nd sem (without evaluations)       11
+Unemployment rate                                    11
+Inflation rate                                       13
+GDP                                                  11
+Target                                                3
+dtype: int64
+
+--- Data Types (Train) ---
+id                                                  int64
+Marital status                                      int64
+Application mode                                    int64
+Application order                                   int64
+Course                                              int64
+Daytime/evening attendance                          int64
+Previous qualification                              int64
+Previous qualification (grade)                    float64
+Nacionality                                         int64
+Mother's qualification                              int64
+Father's qualification                              int64
+Mother's occupation                                 int64
+Father's occupation                                 int64
+Admission grade                                   float64
+Displaced                                           int64
+Educational special needs                           int64
+Debtor                                              int64
+Tuition fees up to date                             int64
+Gender                                              int64
+Scholarship holder                                  int64
+Age at enrollment                                   int64
+International                                       int64
+Curricular units 1st sem (credited)                 int64
+Curricular units 1st sem (enrolled)                 int64
+Curricular units 1st sem (evaluations)              int64
+Curricular units 1st sem (approved)                 int64
+Curricular units 1st sem (grade)                  float64
+Curricular units 1st sem (without evaluations)      int64
+Curricular units 2nd sem (credited)                 int64
+Curricular units 2nd sem (enrolled)                 int64
+Curricular units 2nd sem (evaluations)              int64
+Curricular units 2nd sem (approved)                 int64
+Curricular units 2nd sem (grade)                  float64
+Curricular units 2nd sem (without evaluations)      int64
+Unemployment rate                                 float64
+Inflation rate                                    float64
+GDP                                               float64
+Target                                             object
+dtype: object
+
+--- Target Distribution ---
+Target
+Graduate    0.474163
+Dropout     0.330589
+Enrolled    0.195248
+Name: proportion, dtype: float64
+
+--- Numerical Features (excluding 'id') ---
+['Marital status', 'Application mode', 'Application order', 'Course', 'Daytime/evening attendance', 'Previous qualification', 'Previous qualification (grade)', 'Nacionality', "Mother's qualification", "Father's qualification", "Mother's occupation", "Father's occupation", 'Admission grade', 'Displaced', 'Educational special needs', 'Debtor', 'Tuition fees up to date', 'Gender', 'Scholarship holder', 'Age at enrollment', 'International', 'Curricular units 1st sem (credited)', 'Curricular units 1st sem (enrolled)', 'Curricular units 1st sem (evaluations)', 'Curricular units 1st sem (approved)', 'Curricular units 1st sem (grade)', 'Curricular units 1st sem (without evaluations)', 'Curricular units 2nd sem (credited)', 'Curricular units 2nd sem (enrolled)', 'Curricular units 2nd sem (evaluations)', 'Curricular units 2nd sem (approved)', 'Curricular units 2nd sem (grade)', 'Curricular units 2nd sem (without evaluations)', 'Unemployment rate', 'Inflation rate', 'GDP']
+
+--- Categorical Features ---
+['Target']
+
+--- First 5 Rows of Training Data ---
+   id  Marital status  Application mode  ...  Inflation rate   GDP    Target
+0   0               1                 1  ...             0.6  2.02  Graduate
+1   1               1                17  ...             0.6  2.02   Dropout
+2   2               1                17  ...             0.3 -0.92   Dropout
+3   3               1                 1  ...             0.6  2.02  Enrolled
+4   4               1                 1  ...             2.6  0.32  Graduate
+
+[5 rows x 38 columns]
+
+--- Cleaning: Handling Missing Values in Train ---
+Series([], dtype: int64)
+[Train] The training data is clean; no replacements needed.
+
+--- Cleaning: Handling Missing Values in Test ---
+Series([], dtype: int64)
+[Test] The test data is clean; no replacements needed.
+
+--- Step 5: Exploratory Data Analysis (EDA) ---
+
+--- Highly Correlated Feature Pairs (r > 0.85) ---
+Father's occupation <--> Mother's occupation | Correlation: 0.90
+Curricular units 2nd sem (credited) <--> Curricular units 1st sem (credited) | Correlation: 0.93
+Curricular units 2nd sem (enrolled) <--> Curricular units 1st sem (enrolled) | Correlation: 0.96
+Curricular units 2nd sem (approved) <--> Curricular units 1st sem (approved) | Correlation: 0.92
+Curricular units 2nd sem (grade) <--> Curricular units 1st sem (grade) | Correlation: 0.89
+Curricular units 2nd sem (grade) <--> Curricular units 2nd sem (approved) | Correlation: 0.86
+
+--- Step 6: Feature Engineering ---
+Target class mapping: {'Dropout': np.int64(0), 'Enrolled': np.int64(1), 'Graduate': np.int64(2)}
+No constant features found.
+X_train shape: (76518, 36)
+X_test shape: (51012, 36)
+
+--- Step 7: Model Training with XGBoost ---
+CV Accuracy: 0.8305 ± 0.0021
+CV Macro F1-score: 0.7930 ± 0.0032
+
+Classification Report on Full Training Set:
+              precision    recall  f1-score   support
+
+     Dropout       0.94      0.88      0.90     25296
+    Enrolled       0.76      0.71      0.73     14940
+    Graduate       0.88      0.95      0.91     36282
+
+    accuracy                           0.88     76518
+   macro avg       0.86      0.84      0.85     76518
+weighted avg       0.88      0.88      0.88     76518
+
+
+Sample submission saved to 'data/sample_submission_generated.csv'
+
+--- Step 8: Final Evaluation ---
+Confusion Matrix (on full training set):
+
+--- Step 9: Feature Importance ---
+
+Top 10 Features by Model Importance:
+                               Feature  Importance
+   Curricular units 2nd sem (approved)    0.506388
+               Tuition fees up to date    0.100741
+   Curricular units 2nd sem (enrolled)    0.036777
+                    Scholarship holder    0.036405
+Curricular units 2nd sem (evaluations)    0.035163
+   Curricular units 1st sem (approved)    0.031124
+      Curricular units 2nd sem (grade)    0.018531
+                                Debtor    0.017370
+   Curricular units 1st sem (enrolled)    0.016828
+Curricular units 1st sem (evaluations)    0.016207
+
+Process finished with exit code 0
