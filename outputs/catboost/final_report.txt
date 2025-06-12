@@ -1,0 +1,28 @@
+========================================
+FINAL MODEL REPORT
+========================================
+Model used: CATBOOST
+Train shape: (76518, 39)
+Test shape: (51012, 37)
+Number of features used: 36
+
+Target distribution (train):
+Target
+Graduate    0.474
+Dropout     0.331
+Enrolled    0.195
+
+Classification Report (Train Set):
+              precision    recall  f1-score   support
+
+     Dropout       0.91      0.83      0.87     25296
+    Enrolled       0.66      0.63      0.64     14940
+    Graduate       0.86      0.93      0.89     36282
+
+    accuracy                           0.84     76518
+   macro avg       0.81      0.79      0.80     76518
+weighted avg       0.84      0.84      0.83     76518
+
+========================================
+
+Total execution time: 1237.19 seconds
