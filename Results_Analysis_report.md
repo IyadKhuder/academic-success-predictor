@@ -82,6 +82,5 @@ Despite the theoretical advantage of CatBoost for categorical features:
 - It achieved better **F1-scores** across all classes, including the minority class “Enrolled”.
 - The overall accuracy and training efficiency make XGBoost a better choice for this project at its current stage.
 
-**Recommendation**: Continue with XGBoost while monitoring generalization on unseen data. CatBoost may be revisited if categorical inputs are expanded or if overfitting is observed.
-
+Iyad Khuder
 ---
