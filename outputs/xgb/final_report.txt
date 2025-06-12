@@ -1,0 +1,28 @@
+========================================
+FINAL MODEL REPORT
+========================================
+Model used: XGB
+Train shape: (76518, 39)
+Test shape: (51012, 37)
+Number of features used: 36
+
+Target distribution (train):
+Target
+Graduate    0.474
+Dropout     0.331
+Enrolled    0.195
+
+Classification Report (Train Set):
+              precision    recall  f1-score   support
+
+     Dropout       0.94      0.88      0.90     25296
+    Enrolled       0.76      0.71      0.73     14940
+    Graduate       0.88      0.95      0.91     36282
+
+    accuracy                           0.88     76518
+   macro avg       0.86      0.84      0.85     76518
+weighted avg       0.88      0.88      0.88     76518
+
+========================================
+
+Total execution time: 18.51 seconds
