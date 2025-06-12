@@ -124,11 +124,4 @@ Each run ends with a `final_report.txt` under the appropriate `outputs/{model_na
 
 ---
 
-## To Do (Ideas)
-
-- [ ] Add SHAP explanation for interpretability
-- [ ] Add hyperparameter tuning script
-- [ ] Package as a CLI or streamlit app
-
----
 
