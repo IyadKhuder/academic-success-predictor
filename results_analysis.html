@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results Analysis</title>
+</head>
+<body>
+ Model Comparison: XGBoost vs CatBoost
+📈 Performance Metrics on Training Set
+Metric	CatBoost	XGBoost	Better
+Accuracy	0.84	0.88	XGBoost ✅
+Macro F1-score	0.80	0.85	XGBoost ✅
+Weighted F1-score	0.83	0.88	XGBoost ✅
+
+🎯 Class-wise Breakdown
+1. Dropout
+
+CatBoost: Precision 0.91, Recall 0.83, F1 0.87
+
+XGBoost: Precision 0.94, Recall 0.88, F1 0.90 ✅
+
+2. Enrolled
+
+CatBoost: Precision 0.66, Recall 0.63, F1 0.64
+
+XGBoost: Precision 0.76, Recall 0.71, F1 0.73 ✅
+
+3. Graduate
+
+CatBoost: Precision 0.86, Recall 0.93, F1 0.89
+
+XGBoost: Precision 0.88, Recall 0.95, F1 0.91 ✅
+
+⏱️ Execution Time
+CatBoost: 1237.19 seconds
+
+XGBoost: 18.51 seconds ✅
+
+Conclusion: XGBoost is ~66× faster.
+
+🧠 Why XGBoost Outperformed CatBoost Despite Expectations
+Initially, CatBoost was assumed to be more suitable for this dataset because:
+
+Many features are categorical in nature, despite being encoded as numeric (int64, float64).
+
+Example: course_code, education_level, etc. are numeric but represent categories.
+
+However, XGBoost still outperformed CatBoost both in:
+
+Classification accuracy
+
+Model training speed
+
+This can be attributed to:
+
+Effective Greedy Splitting: Even if splits like feature < threshold are semantically meaningless, they may still capture useful patterns in large datasets.
+
+Noise Tolerance: XGBoost handles numerically encoded categories well, even without explicitly recognizing them as categorical.
+
+Strong Optimization: XGBoost’s highly optimized tree-building mechanism takes advantage of data scale and performs fast, greedy splits that can lead to strong performance even in non-ideal encoding scenarios.
+
+✅ Summary
+Although CatBoost theoretically handles categorical variables better, XGBoost clearly outperformed in this project due to:
+
+Higher precision, recall, and F1-scores across all classes.
+
+Much faster training time.
+
+Robust performance even with categoricals encoded as numeric values.
+</body>
+</html>
